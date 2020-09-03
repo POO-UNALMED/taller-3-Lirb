@@ -24,10 +24,10 @@ public class Control {
 	public void setCanal(int canal) {
 		tv.setCanal(canal);
 	}
-	public TV get_tv() {
+	public TV getTv() {
 		return this.tv;
 	}
-	public void set_tv(TV tv) {
+	public void setTv(TV tv) {
 		this.tv = tv;
 	}
 	public void enlazar(TV tv) {
