@@ -30,7 +30,7 @@ public class TV {
 	public Control getControl() {
 		return this.control;
 	}
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	public void setControl(Control control) {
@@ -48,7 +48,7 @@ public class TV {
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
-	public void setNumTV(int numTVa) {
+	public static void setNumTV(int numTVa) {
 		 numTV = numTVa;
 	}
 	public void turnOn() {
