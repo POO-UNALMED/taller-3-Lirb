@@ -30,7 +30,7 @@ public class TV {
 	public Control getControl() {
 		return this.control;
 	}
-	public static int getNumTV() {
+	public int getNumTV() {
 		return numTV;
 	}
 	public void setControl(Control control) {
@@ -47,9 +47,6 @@ public class TV {
 	}
 	public void setPrecio(int precio) {
 		this.precio = precio;
-	}
-	public static void setNumTV(int numTVa) {
-		numTV = numTVa;
 	}
 	public void turnOn() {
 		this.estado = true;
@@ -69,21 +66,21 @@ public class TV {
 	}
 	public void canalDown() {
 		if(this.estado) {
-			if(this.canal < 120 && this.canal > 0) {
+			if(this.canal <= 120 && this.canal > 2) {
 				this.canal--;
 			}			
 		}
 	}
 	public void volumenUp() {
 		if(this.estado) {
-			if(this.volumen <= 7 && this.volumen >= 0) {
+			if(this.volumen < 7 && this.volumen >= 0) {
 				this.volumen++;
 			}			
 		}
 	}
 	public void volumenDown() {
 		if(this.estado) {
-			if(this.volumen <= 7 && this.volumen >= 0) {
+			if(this.volumen <= 7 && this.volumen >= 1) {
 				this.volumen--;
 			}			
 		}
