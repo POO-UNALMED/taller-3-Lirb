@@ -48,7 +48,7 @@ public class TV {
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
-	public static int setNumTV(int numTVa) {
+	public static void setNumTV(int numTVa) {
 		numTV = numTVa;
 	}
 	public void turnOn() {
