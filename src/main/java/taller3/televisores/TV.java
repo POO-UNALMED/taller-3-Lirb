@@ -40,7 +40,11 @@ public class TV {
 		this.marca = marca;
 	}
 	public void setCanal(int canal) {
-		this.canal = canal;
+		if(this.estado) {
+			if(canal < 120 && canal > 0) {
+				this.canal = canal;
+			}			
+		}
 	}
 	public void setVolumen(int volumen) {
 		this.volumen = volumen;
@@ -69,7 +73,7 @@ public class TV {
 	}
 	public void canalDown() {
 		if(this.estado) {
-			if(this.canal <= 120 && this.canal > 2) {
+			if(this.canal <= 120 && this.canal >= 2) {
 				this.canal--;
 			}			
 		}
