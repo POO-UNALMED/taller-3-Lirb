@@ -9,7 +9,7 @@ public class Marca {
 	public String getNombre() {
 		return this.nombre_marca;
 	}
-	public void set_Nombre(String nombre_marca) {
+	public void setNombre(String nombre_marca) {
 		this.nombre_marca = nombre_marca;
 	}
 }
